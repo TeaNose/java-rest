@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.tinus.service.UserReview" table="user_review" schema="dbo" catalog="test">
+        <id name="id" type="int">
+            <column name="id" />
+        </id>
+        <property name="orderId" type="int">
+            <column name="order_id"/>
+        </property>
+        <property name="productId" type="int">
+            <column name="product_id" />
+        </property>
+        <property name="userId" type="int">
+            <column name="user_id"/>
+        </property>
+        <property name="rating" type="float">
+            <column name="rating"/>
+        </property>
+        <property name="review" type="string">
+            <column name="review"/>
+        </property>
+        <property name="createdAt" type="string">
+            <column name="created_ar"/>
+        </property>
+        <property name="updatedAt" type="string">
+            <column name="updated_at"/>
+        </property>
+    </class>
+</hibernate-mapping>
